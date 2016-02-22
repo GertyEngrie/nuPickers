@@ -72,20 +72,20 @@ namespace nuPickers.Shared.RelationMapping
                                 picker.PickedKeys = SaveFormat.GetSavedKeys(picker.SavedValue.ToString()).ToArray();
 
                                 // delete saved value (setting it to null)
-                                savedEntity.SetValue(propertyType.Alias, null);
+                                //savedEntity.SetValue(propertyType.Alias, null);
 
-                                if (sender is IContentService)
-                                {
-                                    ((IContentService)sender).Save((IContent)savedEntity, 0, false);
-                                }
-                                else if (sender is IMediaService)
-                                {
-                                    ((IMediaService)sender).Save((IMedia)savedEntity, 0, false);
-                                }
-                                else if (sender is IMemberService)
-                                {
-                                    ((IMemberService)sender).Save((IMember)savedEntity, false);
-                                }
+                                //if (sender is IContentService)
+                                //{
+                                //    ((IContentService)sender).Save((IContent)savedEntity, 0, false);
+                                //}
+                                //else if (sender is IMediaService)
+                                //{
+                                //    ((IMediaService)sender).Save((IMedia)savedEntity, 0, false);
+                                //}
+                                //else if (sender is IMemberService)
+                                //{
+                                //    ((IMemberService)sender).Save((IMember)savedEntity, false);
+                                //}
                             }
                         }
                        
